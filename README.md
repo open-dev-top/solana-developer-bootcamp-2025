@@ -1,1 +1,1 @@
-# solana-bootcamp-2025
+# solana-developer-bootcamp-2025
