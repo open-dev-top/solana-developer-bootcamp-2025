@@ -1,27 +1,28 @@
 import { BankrunProvider, startAnchor } from "anchor-bankrun";
 import * as anchor from '@coral-xyz/anchor'
 import { Program } from '@coral-xyz/anchor'
-import { Keypair, PublicKey } from '@solana/web3.js'
+import { PublicKey } from '@solana/web3.js'
 import { Votingdapp } from '../target/types/votingdapp'
-import { isGeneratorFunction } from "util/types";
 
 const IDL = require('../target/idl/votingdapp.json')
 
-const votingAddress = new PublicKey("coUnmi3oBUtwtd9fjeAvSsJssXh5A5xyPbhpewyzRVF")
+const votingAddress = new PublicKey("H8G5EciWJfD2BBdhZHABawizduY7G2tg3UkCCD8ngQz2")
 
 describe('votingdapp', () => {
   let context
   let provider
-  let votingProgram: anchor.Program<Votingdapp>
+  // let votingProgram: anchor.Program<Votingdapp>
+  anchor.setProvider(anchor.AnchorProvider.env());
+  let votingProgram = anchor.workspace.Voting as Program<Votingdapp>;
 
   beforeAll(async () => {
-    context = await startAnchor("", [{ name: "votingdapp", programId: votingAddress }], []);
-    provider = new BankrunProvider(context);
+    // context = await startAnchor("", [{ name: "votingdapp", programId: votingAddress }], []);
+    // provider = new BankrunProvider(context);
 
-    votingProgram = new Program<Votingdapp>(
-      IDL,
-      provider,
-    );
+    // votingProgram = new Program<Votingdapp>(
+    //   IDL,
+    //   provider,
+    // );
   })
 
   it('Initialize Poll', async () => {

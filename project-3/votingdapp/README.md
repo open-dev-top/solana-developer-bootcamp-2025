@@ -34,6 +34,8 @@ solana-keygen new
 rm -rf .next && npm run dev
 
 cd anchor && anchor deploy
+
+anchor clean && anchor test --skip-local-validator
 ```
 
 ### Prerequisites
