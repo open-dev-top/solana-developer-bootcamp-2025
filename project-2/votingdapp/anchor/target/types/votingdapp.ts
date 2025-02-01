@@ -138,14 +138,14 @@ export type Votingdapp = {
     {
       "name": "votingdapp",
       "discriminator": [
-        255,
-        176,
-        4,
-        245,
-        188,
-        253,
-        124,
-        25
+        57,
+        68,
+        178,
+        114,
+        248,
+        209,
+        74,
+        101
       ]
     }
   ],
