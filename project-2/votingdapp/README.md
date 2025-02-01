@@ -20,6 +20,10 @@
 │  npm run anchor build | test | localnet | deploy     │
 │                                                      │
 ├──────────────────────────────────────────────────────╯
+
+cd anchor && anchor build
+
+anchor test --skip-local-validator --skip-deploy
 ```
 
 ### Prerequisites
@@ -30,7 +34,22 @@
 - Anchor CLI 0.30.1 or higher
 - Solana CLI 1.18.17 or higher
 
+```shell
+alex@root:~/sol_dev_camp/solana-developer-bootcamp-2025$ rustc --version
+rustc 1.84.1 (e71f9a9a9 2025-01-27)
+alex@root:~/sol_dev_camp/solana-developer-bootcamp-2025$ cargo --version
+cargo 1.84.1 (66221abde 2024-11-19)
+alex@root:~/sol_dev_camp/solana-developer-bootcamp-2025$ solana --version
+solana-cli 2.0.25 (src:40aee13c; feat:607245837, client:Agave)
+alex@root:~/sol_dev_camp/solana-developer-bootcamp-2025$ anchor --version
+anchor-cli 0.30.1
+```
+
 ### Installation
+
+```shell
+npm i anchor-bankrun
+```
 
 #### Clone the repo
 
