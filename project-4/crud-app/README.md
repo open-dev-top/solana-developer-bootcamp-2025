@@ -2,6 +2,14 @@
 
 ## Getting Started
 
+```shell
+solana-test-validator
+
+cd anchor && anchor deploy --provider.cluster localnet
+
+anchor keys sync
+```
+
 ### Prerequisites
 
 - Node v18.18.0 or higher
