@@ -45,6 +45,7 @@ anchor clean && anchor test --skip-local-validator
 - Rust v1.77.2 or higher
 - Anchor CLI 0.30.1 or higher
 - Solana CLI 1.18.17 or higher
+
 ```shell
 alex@root:~/sol_dev_camp/solana-developer-bootcamp-2025$ rustc --version
 rustc 1.84.1 (e71f9a9a9 2025-01-27)

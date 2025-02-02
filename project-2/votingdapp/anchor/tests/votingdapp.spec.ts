@@ -1,9 +1,8 @@
 import { BankrunProvider, startAnchor } from "anchor-bankrun";
 import * as anchor from '@coral-xyz/anchor'
 import { Program } from '@coral-xyz/anchor'
-import { Keypair, PublicKey } from '@solana/web3.js'
+import { PublicKey } from '@solana/web3.js'
 import { Votingdapp } from '../target/types/votingdapp'
-import { isGeneratorFunction } from "util/types";
 
 const IDL = require('../target/idl/votingdapp.json')
 

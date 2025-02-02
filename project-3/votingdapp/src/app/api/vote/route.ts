@@ -8,7 +8,7 @@ const IDL = require('@/../anchor/target/idl/votingdapp.json');
 export const OPTIONS = GET;
 
 export async function GET(request: Request) {
-  const actionMetdata: ActionGetResponse = {
+  const actionMetadata: ActionGetResponse = {
     icon: "https://zestfulkitchen.com/wp-content/uploads/2021/09/Peanut-butter_hero_for-web-2.jpg",
     title: "Vote for your favorite type of peanut butter!",
     description: "Vote between crunchy and smooth peanut butter.",
@@ -26,7 +26,7 @@ export async function GET(request: Request) {
       ]
     }
   };
-  return Response.json(actionMetdata, { headers: ACTIONS_CORS_HEADERS});
+  return Response.json(actionMetadata, { headers: ACTIONS_CORS_HEADERS});
 }
 
 export async function POST(request: Request) {
