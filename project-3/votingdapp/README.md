@@ -36,6 +36,8 @@ rm -rf .next && npm run dev
 cd anchor && anchor deploy
 
 anchor clean && anchor test --skip-local-validator
+
+https://dial.to/?action=solana-action:http://localhost:3000/api/vote
 ```
 
 ### Prerequisites
