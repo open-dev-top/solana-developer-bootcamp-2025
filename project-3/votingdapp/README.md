@@ -59,7 +59,7 @@ anchor-cli 0.30.1
 ### Installation
 
 ```shell
-npm i anchor-bankrun
+cd anchor && npm i anchor-bankrun
 
 npm install @solana/actions
 ```

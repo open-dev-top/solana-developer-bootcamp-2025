@@ -13,7 +13,7 @@ describe('votingdapp', () => {
   let provider
   // let votingProgram: anchor.Program<Votingdapp>
   anchor.setProvider(anchor.AnchorProvider.env());
-  let votingProgram = anchor.workspace.Voting as Program<Votingdapp>;
+  let votingProgram = anchor.workspace.Votingdapp as Program<Votingdapp>;
 
   beforeAll(async () => {
     // context = await startAnchor("", [{ name: "votingdapp", programId: votingAddress }], []);
